@@ -32,7 +32,7 @@ public class ChatGptService {
 
         String prompt = "Me sugira jogos baseado no meu banco de dados, com os seguinte jogos: "+ listajogos;
         Map<String, Object> requestBody = Map.of(
-            "model", "gemini-2.0-flash",
+                "model", "gemini-2.5-flash",
                 "messages", List.of(
                         Map.of("role", "system", "content", "Você e um especialista que faz indicação de jogos para pessoas"),
                         Map.of("role", "user", "content", prompt)
